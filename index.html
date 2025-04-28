@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 中央寄せ */
+        }
+        h1 {
+            color: #333;
+            text-align: center; /* タイトル中央寄せ */
+        }
+        h2 {
+            text-align: center; /* 検索見出し中央寄せ */
+        }
+        .search-container {
+            display: flex;
+            justify-content: center; /* 検索窓を中央に配置 */
+            margin: 10px 0;
+        }
+        input[type="text"] {
+            width: 200px;
+            padding: 10px;
+        }
+        ul {
+            list-style-type: none; /* リストのスタイルをなしに */
+            padding: 0; /* パディングをなしに */
+        }
+        li {
+            background: #eee; /* リストアイテムの背景色 */
+            margin: 5px 0; /* 上下のマージン */
+            padding: 5px; /* パディング */
+        }
+        .small {
+            font-size: 0.8em; /* フォントサイズを小さく */
+            text-align: center; /* 中央寄せ */
+            margin-top: 20px; /* 上部に余白を追加 */
+        }
+    </style>
+</head>
+<body>
+    <!-- タイトル -->
+    <h1>本</h1>
+
+    <!-- 検索セクション -->
+    <h2>検索</h2>
+    <div class="search-container">
+        <input type="text" id="searchBox" placeholder="タイトルを入れてください">
+    </div>
+    <ul id="resultList"></ul>
+
+   
+    <!-- JavaScriptファイルのインクルード -->
+    <script src="./search.js"></script>
+</body>
+</html>
